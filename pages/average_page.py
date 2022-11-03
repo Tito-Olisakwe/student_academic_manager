@@ -18,18 +18,18 @@ class   learning_processes:
 
             
 # the GPA for Reflective thinking
-class refflective_thinking:
+class reflective_thinking:
     userScore = motivation.score + procrastination.score + reflective_practice.score + articulating_process.score + portofolia_building.score + teaching_forward.score + articulating_process.score
 
-    def average():
+    def Averag():
         microcourse_per = (userScore * 70) / 700
         summative_per = (userScore * 30) / 5
         total = microcourse_per + summative_per
         gpa = (total * 5) / 100
      
-    print("the reflective thinking GPA = " gpa.average()) 
+    print("the reflective thinking GPA = " gpa.Averag() ) 
 
 #The total GPA 
-Overall_gpa = (average.GPA() + gpa.average()) / 2
+Overall_gpa = (average.GPA() + gpa.Averag() ) / 2
 print("Your overall gpa is "Overall_gpa)
 
