@@ -10,7 +10,7 @@ class Strategies:
         self.user_score = user_score
 
 
-def strategy_test(user_score):
+def suggest_strategy_subject(user_score):
     if user_score <= 19:
         print('suggest strategy')
     elif user_score <= 39:
@@ -27,32 +27,45 @@ def strategy_test(user_score):
         print('suggest strategy')
 
 
-def suggest_strategy_subject(user_score):
-    if user_score <= 25:
-        print(f'{time_management.name}')
-        print(f'{time_management.description}')
-    elif user_score <= 50:
-        print(f'{jornaling.name}')
-        print(f'{jornaling.description}')
-    elif user_score <= 80:
-        print(f'{self_regulation.name}')
-        print(f'{self_regulation.description}')
-    else:
-        print("congratulation keep it up")
+def suggest_strategy_overall(user_score):
+    if user_score <= 1:
+        print('suggest strategy')
+    elif user_score <= 2:
+        print('suggest strategy')
+    elif user_score <= 3:
+        print('suggest strategy')
+    elif user_score <= 4:
+        print('suggest strategy')
+    elif user_score >= 4.5:
+        print('suggest strategy')
 
 
-def suggest_strategy_overall(overall_average):
-    if user_score <= 1.6:
-        print(f'{time_management.name}')
-        print(f'{time_management.description}')
-    elif user_score <= 2.6:
-        print(f'{jornaling.name}')
-        print(f'{jornaling.description}')
-    elif user_score <= 4.6:
-        print(f'{self_regulation.name}')
-        print(f'{self_regulation.description}')
-    else:
-        print("congratulation keep it up")
+# def suggest_strategy_subject(user_score):
+#     if user_score <= 25:
+#         print(f'{time_management.name}')
+#         print(f'{time_management.description}')
+#     elif user_score <= 50:
+#         print(f'{jornaling.name}')
+#         print(f'{jornaling.description}')
+#     elif user_score <= 80:
+#         print(f'{self_regulation.name}')
+#         print(f'{self_regulation.description}')
+#     else:
+#         print("congratulation keep it up")
+
+
+# def suggest_strategy_overall(overall_average):
+#     if user_score <= 1.6:
+#         print(f'{time_management.name}')
+#         print(f'{time_management.description}')
+#     elif user_score <= 2.6:
+#         print(f'{jornaling.name}')
+#         print(f'{jornaling.description}')
+#     elif user_score <= 4.6:
+#         print(f'{self_regulation.name}')
+#         print(f'{self_regulation.description}')
+#     else:
+#         print("congratulation keep it up")
 
 
 # Strategies
