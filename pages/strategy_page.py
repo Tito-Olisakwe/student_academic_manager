@@ -19,7 +19,7 @@ def suggest_strategy_subject(user_score):
     elif user_score <= 50:
         print(f'{jornaling.name}')
         print(f'{jornaling.description}')
-    elif user_score <= 75: 
+    elif user_score <= 80: 
         print(f'{self_regulation.name}')
         print(f'{self_regulation.description}')
     else:
