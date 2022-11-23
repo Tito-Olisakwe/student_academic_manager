@@ -116,11 +116,3 @@ This will not only help them understand concepts better but also give them time 
 """
 )
 
-External_extensive-research = Strategies(name='External and extensive research',
-overall_average = overall_average, user_score = user_score,
-description = """
-A student should not only take the information given to them but also make time to find 
-their own information by making research.
-
-"""
-)
