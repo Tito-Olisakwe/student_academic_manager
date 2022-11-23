@@ -85,3 +85,42 @@ goals and track their progress against their goals and strategies. Self-regulati
 students to become less reactive and more active in learning.
 
 ''') 
+
+procrastination = Strategies(name='procrastination',
+overall_average = overall_average, user_score = user_score,
+description = """ 
+Lack of motivation, fatigue, anxiety and similar emotions can cause Procrastination. 
+This is because we tend to rely on our willpower to carry out tasks, so when we don't feel 
+like doing something our willpower fails us and we start procrastinating. It's possible to want to do something
+ but also not feel like doing it, you know it's important but you just don't have the motivation 
+ to carry out the task. If you find yourself in this situation often, you need to stop relying on willpower 
+ and create a system for doing your work. A simple and effective system that will enable you to do
+  your work even when you lack motivation is forming Tiny Habits.
+
+To do this:
+1. Determine the tiny habit you want to form. (e.g Doing micro courses)
+2. Pick an existing habit that you can do your tiny habit immediately after. (e.g watching anime)
+3. Decide on a small celebration to do each time you complete your tiny habit. (e.g a high-five)
+4. Use this formula: After I [existing habit] I will [new tiny behaviour], then I will [small celebration].
+
+For example, your tiny habit statement could be:
+After I watch an episode of Jujutsu Kaisen I will do one section of a micro-course, and then I will give myself a high-five.
+""")
+
+personalstudy = Strategies(name='personal study',
+overall_average = overall_average, user_score = user_score,
+description = """
+An individual should have their own private time scheduled where they can sit down and personally reflect and go through everything that they didn’t understand before.
+This will not only help them understand concepts better but also give them time to do more research and test their knowledge.
+
+"""
+)
+
+External_extensive-research = Strategies(name='External and extensive research',
+overall_average = overall_average, user_score = user_score,
+description = """
+A student should not only take the information given to them but also make time to find 
+their own information by making research.
+
+"""
+)
