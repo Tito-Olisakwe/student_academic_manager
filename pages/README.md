@@ -10,4 +10,4 @@ Subject page -- Take input of score/show score, show average, give strategy. (Ti
 
 Average -- Take input of score goal, show average score, compare average score to goal, recommend strategies. (Cynthia)
 
-Strategy -- All the strategies.
+Strategy -- All the strategies. (Clever)
