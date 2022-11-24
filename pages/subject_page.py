@@ -2,6 +2,7 @@
 
 # This page will be displayed when the user navigates from the main page to a particular subject.
 
+
 # some variables to test things out
 subject_name = 'course'
 module_name = 'module'
@@ -10,6 +11,7 @@ user_summative_score = 2.5
 module_average = 2.5
 overall_average = 2.5
 recommended_strategy = 'strategy'
+updated_score = False
 updated_score = False
 
 
@@ -90,58 +92,58 @@ def display_module_overview(module_name, user_summative_score, module_average):
 # micro-courses objects
 # Learning Processes
 curiosity = MicroCourse(name='Curiosity', module='Learning Processes',
-                        score=user_score, average=overall_average, strategy=recommended_strategy)
+                        score=70, average=overall_average, strategy=recommended_strategy)
 
 learning_goals = MicroCourse(name='Learning Goals', module='Learning Processes',
-                             score=user_score, average=overall_average, strategy=recommended_strategy)
+                             score=97, average=overall_average, strategy=recommended_strategy)
 
 self_assessment = MicroCourse(name='Self Assessment', module='Learning Processes',
-                              score=user_score, average=overall_average, strategy=recommended_strategy)
+                              score=80, average=overall_average, strategy=recommended_strategy)
 
 navigating_ambiguity = MicroCourse(name='Navigating Ambigiuty', module='Learning Processes',
-                                   score=user_score, average=overall_average, strategy=recommended_strategy)
+                                   score=56, average=overall_average, strategy=recommended_strategy)
 
 process_thinking = MicroCourse(name='Process Thinking', module='Learning Processes',
-                               score=user_score, average=overall_average, strategy=recommended_strategy)
+                               score=87, average=overall_average, strategy=recommended_strategy)
 
 sourcing_discerningly = MicroCourse(name='Sourcing Discerningly', module='Learning Processes',
-                                    score=user_score, average=overall_average, strategy=recommended_strategy)
+                                    score=98, average=overall_average, strategy=recommended_strategy)
 
 documenting = MicroCourse(name='Documenting', module='Learning Processes',
-                          score=user_score, average=overall_average, strategy=recommended_strategy)
+                          score=75, average=overall_average, strategy=recommended_strategy)
 
 organizing_with_principles = MicroCourse(name='Organizing with Principles', module='Learning Processes',
-                                         score=user_score, average=overall_average, strategy=recommended_strategy)
+                                         score=84, average=overall_average, strategy=recommended_strategy)
 
 # Reflective Thinking
 motivation = MicroCourse(name='Motivation', module='Reflective Thinking',
-                         score=user_score, average=overall_average, strategy=recommended_strategy)
+                         score=40, average=overall_average, strategy=recommended_strategy)
 
 procrastination = MicroCourse(name='Procrastination', module='Reflective Thinking',
-                              score=user_score, average=overall_average, strategy=recommended_strategy)
+                              score=65, average=overall_average, strategy=recommended_strategy)
 
 reflective_practice = MicroCourse(name='Reflective Practice', module='Reflective Thinking',
-                                  score=user_score, average=overall_average, strategy=recommended_strategy)
+                                  score=86, average=overall_average, strategy=recommended_strategy)
 
 articulating_purpose = MicroCourse(name='Articulating Purpose', module='Reflective Thinking',
-                                   score=user_score, average=overall_average, strategy=recommended_strategy)
+                                   score=59, average=overall_average, strategy=recommended_strategy)
 
 portfolio_building = MicroCourse(name='Portfolio Building', module='Reflective Thinking',
-                                 score=user_score, average=overall_average, strategy=recommended_strategy)
+                                 score=100, average=overall_average, strategy=recommended_strategy)
 
 teaching_forward = MicroCourse(name='Teaching Forward', module='Reflective Thinking',
-                               score=user_score, average=overall_average, strategy=recommended_strategy)
+                               score=68, average=overall_average, strategy=recommended_strategy)
 
 articulating_process = MicroCourse(name='Articulating process', module='Reflective Thinking',
-                                   score=user_score, average=overall_average, strategy=recommended_strategy)
+                                   score=99, average=overall_average, strategy=recommended_strategy)
 
 
 # summative objects
 learning_processes_summative = Summative(
-    name='Learning Processes', score=user_summative_score, average=module_average)  # remember to change score and average
+    name='Learning Processes', score=4.6, average=average_page.learning_process_average())  # remember to change score and average
 
 reflective_thinking_summative = Summative(
-    name='Reflective Thinking', score=user_summative_score, average=module_average)
+    name='Reflective Thinking', score=3.7, average=average_page.reflective_thinking_average())
 
 
 # test

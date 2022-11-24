@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def get_credential():
-    User_name = input("enter your name")
-    User_email = input("enter your student email ")
-    print(User_name)
-    print(User_email)
+
+def take_credentials():
+    user_name = input("enter your name: ")
+    user_email = input("enter your student email: ")
+    return f'welcome {user_name} as user {user_email}, you will now be moved to the main page'

@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-# This page will display list of all subjects
-# This page will display list of profiles
-# This page will display list of all strategies
-# This page will display list of average
-# This page will display list of users to navigate all pages.
+import value
 
-user_name = 'Stella Umwari'
+user_name = 'Tito-Paris'
 
 
 def display_main(user_name):
@@ -29,6 +25,9 @@ Portfolio building      -- to go here type 13
 Teaching forward        -- to go here type 14
 Articulating process    -- to go here type 15
 
+Learning processes overview    -- to go here type 16
+Reflective practice overview   -- to go here type 17
+
 
 This is the list of all the strategies:
 
@@ -47,11 +46,8 @@ Self-Regulation
 
 To see the description of each strategy, type s
 
-Your overall average is XX 
+Your overall average is {value.overall_gpa()} 
 To see more information on average, type a
 
 To come back to the main page from anywhere, type m
 """)
-
-
-display_main(user_name)
