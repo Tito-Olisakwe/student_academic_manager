@@ -50,4 +50,5 @@ Your overall average is {value.overall_gpa()}
 To see more information on average, type a
 
 To come back to the main page from anywhere, type m
+To end program, type e
 """)

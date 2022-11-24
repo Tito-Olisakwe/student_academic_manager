@@ -91,7 +91,6 @@ concentrated work. You can adjust the duration based on what is suitable for you
 
 For example; If your total study time is 3 hours, you will completely focus on studying for 
 25mins and then rest for 5mins over and over again until the 3 hours is up.
-
 ''')
 
 
@@ -100,7 +99,6 @@ jornaling = Strategies(name='Journaling',
 Journaling offer a good way to pen down their thought and experience for later use,
 This helps students to track their progress through writing down what they have done.
 Also can help them to know their strengths and weaknesses.
-
 ''')
 
 self_regulation = Strategies(name='Self Regulation',
@@ -111,7 +109,6 @@ who can pursue their own interests.
 Developing this skill set allows students to learn more effectively because they can set clear 
 goals and track their progress against their goals and strategies. Self-regulation allows 
 students to become less reactive and more active in learning.
-
 ''')
 
 procrastination = Strategies(name='Procrastination',
@@ -133,7 +130,6 @@ To do this:
 For example, your tiny habit statement could be:
 After I watch an episode of Jujutsu Kaisen I will do one section of a micro-course, and then I will 
 give myself a high-five.
-
 """)
 
 personal_study = Strategies(name='Personal Study',
@@ -141,7 +137,6 @@ personal_study = Strategies(name='Personal Study',
 An individual should have their own private time scheduled where they can sit down and personally 
 reflect and go through everything that they didn’t understand before. This will not only help them 
 understand concepts better but also give them time to do more research and test their knowledge.
-
 """
                             )
 
@@ -150,7 +145,6 @@ external_extensive_research = Strategies(name='External and Extensive Research',
                                          description="""
 A student should not only take the information given to them but also make time to find 
 their own information by making research.
-
 """
                                          )
 
@@ -162,7 +156,6 @@ order to improve upon them. It is a way of constantly learning from one's own ex
 growing as a result. Reflective practice is an important part of being a successful learner, as 
 it allows individuals to identify areas in which they need to improve and then take steps to address 
 those areas.
-
 """
                                  )
 team_work = Strategies(name='Team Work',
@@ -172,7 +165,6 @@ in their future careers. When students work together in teams, they can accompli
 could alone. Teamwork also helps students to develop important social skills, such as communication 
 and cooperation. Working in teams can be challenging at times, but it is also a lot of fun. Students 
 who are able to work together effectively can learn a lot from each other and build strong relationships.
-
 """
                        )
 
@@ -188,14 +180,12 @@ action_plan = Strategies(name='Having Action Plan',
                          description="""
 It is a checklist for the steps or tasks you need to complete to achieve your goals. 
 This can help students to know how it started and will be ended.
-
 """
                          )
 self_assessment = Strategies(name='Self-Assessment',
                              description="""
 It is good for everyone's goal, especially students, as it can help them evaluate their knowledge, skills, 
 and qualities in their learning process.
-
 """
                              )
 feedback = Strategies(name='Feedback',
@@ -206,7 +196,6 @@ Effective and relevant feedback also helps learners reflect on their learning st
 make adjustments to better progress through their learning stages. Effective feedback is now designed to determine how 
 understanding learners differ for each individual and the rate at which skills are developing so they can plan next steps 
 to achieve their learning goals. Determined.
-
 """
                       )
 
@@ -251,5 +240,7 @@ def display_strategies():
 {feedback.name}
 {feedback.description}
 
+To see more information on average, type a
 To go back to the main page, type m
-    """
+To end program, type e
+"""

@@ -143,7 +143,11 @@ def display_subject_details(subject_name, module_name, user_score, module_averag
     print('The following strateg(y/ies) has been recommended to you based on your performance:\n')
     print(f'{strategy_page.suggest_strategy_subject(user_score= user_score)}\n')
     print(f'{strategy_page.suggest_strategy_overall(overall_average= overall_gpa)}\n')
-    print(f'To go back to the main page, type: m')
+    print(f'''
+To see the description of every strategy, type s
+To see more information on average, type a
+To go back to the main page, type m
+To end program, type e''')
 
 
 # function for displaying module overview
@@ -167,6 +171,7 @@ def display_module_overview(module_name, user_summative_score, module_average):
     7. Documenting                  ---{documenting.score}%
     8. Organizing with principles   ---{organizing_with_principles.score}%
         ''')
+        module_average = learning_process_average()
     elif module_name == reflective_thinking_summative.name:
         print(f'''
     1. Motivation                   ---{motivation.score}%
@@ -177,12 +182,38 @@ def display_module_overview(module_name, user_summative_score, module_average):
     6. Teaching forward             ---{teaching_forward.score}%
     7. Articulating process         ---{articulating_process.score}%
         ''')
+        module_average = reflective_thinking_average()
 
     print(f'Your summative score is {user_summative_score}\n\n')
     print(f'Your GPA for {module_name} is: {module_average}\n')
     print(f'Your overall GPA is: {overall_gpa()}\n\n')
-    print(f'To go back to the main page, type: m')
+    print(f'''
+To see the description of every strategy, type s
+To see more information on average, type a
+To go back to the main page, type m
+To end program, type e''')
 
 
-# print(display_subject_details(subject_name=curiosity.name, module_name=curiosity.module,
-#       user_score=curiosity.score, module_average=learning_process_average()))
+def display_average():
+    return f""""
+Your overall gpa is {overall_gpa()}
+Your learning processes gpa is {learning_process_average()}
+Your reflective thinking gpa is {reflective_thinking_average()}
+
+The goal you set for yourself at the begining of the term is {user_goal},
+and your current average is {overall_gpa()}. 
+
+Here are a few strategies that can assist you in your learning journey:
+{strategy_page.self_assessment.name}
+{strategy_page.self_assessment.description}
+
+{strategy_page.process_thinking.name}
+{strategy_page.process_thinking.description}
+
+{strategy_page.personal_study.name}
+{strategy_page.personal_study.description}
+
+To see the description of every strategy, type s
+To go back to the main page, type m
+To end program, type e
+"""
